@@ -38,9 +38,7 @@ const find = (bank: number[], index: number, numbers: number, total: number): nu
       max_index = index
     }
   }
-
   if (max < 0) return total
-
   return find(bank, max_index + 1, numbers - 1, Number(String(total) + String(max)))
 }
 
