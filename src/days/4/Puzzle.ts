@@ -83,6 +83,6 @@ const second = (input: string) => {
   return count;
 };
 
-const expectedSecondSolution = 'solution 2';
+const expectedSecondSolution = 8623;
 
 export { expectedFirstSolution, expectedSecondSolution, first, second };
