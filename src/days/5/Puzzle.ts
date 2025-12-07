@@ -39,12 +39,12 @@ const second = (input: string) => {
     })
 
   fresh_ranges.sort((a, b) => { return a.first - b.first })
-  
+
   const no_overlap = new Array
   fresh_ranges.forEach((current) => {
     for (let i = 0; i < no_overlap.length; i++) {
       if (no_overlap[i].last >= current.first) {
-        if(no_overlap[i].last < current.last) no_overlap[i].last = current.last
+        if (no_overlap[i].last < current.last) no_overlap[i].last = current.last
         return
       }
     }
